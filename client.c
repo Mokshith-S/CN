@@ -2,7 +2,6 @@
 #include<arpa/inet.h>
 #include<stdio.h>
 #include<unistd.h>
-#include<string.h>
 int main()
 {
 char fname[50],buffer[1024];
@@ -20,10 +19,8 @@ printf("Sending request\n");
 send(s,fname,sizeof(fname),0);
 while((n=recv(s,buffer,sizeof(buffer),0))>0)
 {
-
 printf("%s\n",buffer);
 printf("Recieved response\n");
 }
-
 return 0;
 }
