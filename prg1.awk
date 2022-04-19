@@ -6,4 +6,4 @@ if($1=="d")
 printf("%s\t%s\n",$5,$11);
 }
 }
-END{ printf("The number of packets dropped +%d\n",c); }
+END{ printf("The number of packets dropped =%d\n",c); }
